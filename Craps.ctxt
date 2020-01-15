@@ -2,6 +2,8 @@
 comment0.target=Craps
 comment1.params=in
 comment1.target=void\ giveInstructions(java.util.Scanner)
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-numComments=3
+comment2.params=in\ d
+comment2.target=int\ rollTheDice(java.util.Scanner,\ Die)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
