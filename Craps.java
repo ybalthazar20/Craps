@@ -15,7 +15,7 @@ public class Craps
         System.out.print("Would you instructions on how to play Craps (Y/n)?");
         String playGame = in.nextLine();
         if (playGame.equals("") || 
-        playGame.substring(0,1).equalsIgnoreCase("y"))
+            playGame.substring(0,1).equalsIgnoreCase("y"))
         {
             System.out.println("1. Roll two six-sided dice.");
             System.out.println("2. a. On first roll, if you get a 7 or 11 you win!");
@@ -31,27 +31,25 @@ public class Craps
     public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
-        
-        System.out.print("Would you instructions on how to play Craps (Y/n)?");
-        String playGame = in.nextLine();
+        System.out.println("The Game of Craps!");
         giveInstructions(in);
-
+        System.out.println("Let's play craps!");
         
-        
-        
-        System.out.println("Do you wanna play craps? (Y/n)");
-        String answer = in.nextLine();
-        if (answer.substring(0,1).equalsIgnoreCase("y"))
+        String playStatus = "y";
+        while(playStatus.substring(0,1).equalsIgnoreCase("y"))
         {
-            
-            
-            
-            
-            
-            
-            
+            System.out.println("DEBUG: We're going to play Craps...");
+                        
             System.out.print("Press <Enter> to roll...");
             String pause = in.nextLine();
+            
+            
+            
+            
+            System.out.println("Would you like to play again? (Y/n)");
+            playStatus = in.nextLine();
+            if (playStatus.equals("")) { playStatus = "y";}
+            
             
             
             
